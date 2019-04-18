@@ -4,7 +4,7 @@ const chalk = require('chalk')
 
 const address = process.argv[2]
 if(!address){
-    console.log("Please provide an address")
+    console.log(chalk.red.inverse("Please provide an address"))
 }
 else{
     geocode(address, (err, data) => {
